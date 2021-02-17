@@ -1,5 +1,4 @@
 import HeaderComp from "../components/header/header.component";
-
 import MobileHeader from '../components/header/mobileHeader.component';
 
 const Layout = (props) => {

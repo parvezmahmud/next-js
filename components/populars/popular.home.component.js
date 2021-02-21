@@ -8,9 +8,9 @@ const PopularHomeComponent = () => {
                 <h4 className="featured-header tracking-widest subpixel-antialiased sm:tracking-wider">Popular</h4>
             </div>
             <div className="grid grid-cols-3 p-4 text-center text-white space-x-2">
-                {PopularData.map((popular) =>(
+                {PopularData.slice(0,3).map((popular) =>(
                     <div className="shadow-xl popular-box h-60 bg-gray-700 bg-opacity-50 rounded-md" style={{backgroundImage:`url(${popular.image})` }} key={popular.id}>
-                        <div className="bg-gray-900 lg:bg-opacity-0 hover:bg-opacity-80 h-20 w-full bg-opacity-80 transition ease-in duration-300">
+                        <div className={`${popular.classes}`}>
                             <h2 className="text-md sm:text-2xl">{popular.title}</h2>
                             <p className="text-xs md:text-sm">{popular.description}</p>
                         </div>

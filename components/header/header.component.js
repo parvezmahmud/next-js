@@ -3,7 +3,7 @@ import SearchBar from '../search/searchBar.home.component';
 
 const HeaderComp = () => {
     return(
-        <nav className="hidden md:flex bg-gray-900 h-12 w-screen">
+        <nav className="hidden md:flex bg-gray-900 h-14 w-screen">
             <div className="lg:flex-1">
                 <h6 className="pl-16 lg:pl-32 pt-2.5 text-xl tracking-widest italic font-light pr-16 lg:pr-0">Title</h6>
             </div>

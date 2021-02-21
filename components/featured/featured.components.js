@@ -38,7 +38,7 @@ const FeaturedRestaurants = () => {
                         font-family: 'Benne', serif;
                         font-size: 25px;
                         font-weight: 100;
-                    }
+                    } 
 
                     .res-box{
                         background-image: url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80");

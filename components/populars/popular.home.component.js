@@ -1,4 +1,5 @@
 import PopularData from './popular.data';
+import Link from 'next/link';
 
 
 const PopularHomeComponent = () => {
@@ -8,12 +9,16 @@ const PopularHomeComponent = () => {
                 <h4 className="featured-header tracking-widest subpixel-antialiased sm:tracking-wider">Popular</h4>
             </div>
             <div className="grid grid-cols-3 p-4 text-center text-white space-x-2">
-                {PopularData.slice(0,3).map((popular) =>(
-                    <div className="shadow-xl popular-box h-60 bg-gray-700 bg-opacity-50 rounded-md" style={{backgroundImage:`url(${popular.image})` }} key={popular.id}>
-                        <div className={`${popular.classes}`}>
-                            <h2 className="text-md sm:text-2xl">{popular.title}</h2>
-                            <p className="text-xs md:text-sm">{popular.description}</p>
-                        </div>
+                {PopularData.slice(0,3).map((popular, index) =>(
+                    <div key={index}>
+                        <Link as={`/${popular.popularUID}/${popular.title}`} href="/[popularUID]/[title]">
+                            <div className="shadow-xl popular-box h-60 bg-gray-700 bg-opacity-50 rounded-md" style={{backgroundImage:`url(${popular.image})` }} key={popular.popularUID}>
+                                <div className={`${popular.classes}`}>
+                                    <h2 className="text-md sm:text-2xl">{popular.title}</h2>
+                                    <p className="text-xs md:text-sm">{popular.description}</p>
+                                </div>
+                            </div>
+                        </Link>
                     </div>
                 )
                 )}

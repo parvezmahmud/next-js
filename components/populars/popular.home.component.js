@@ -10,7 +10,7 @@ const PopularHomeComponent = () => {
             </div>
             <div className="grid grid-cols-3 p-4 text-center text-white space-x-2">
                 {PopularData.slice(0,3).map((popular, index) =>(
-                    <div key={index}>
+                    <div key={index} className="cursor-pointer">
                         <Link as={`/${popular.popularUID}/${popular.title}`} href="/[popularUID]/[title]">
                             <div className="shadow-xl popular-box h-60 bg-gray-700 bg-opacity-50 rounded-md" style={{backgroundImage:`url(${popular.image})` }} key={popular.popularUID}>
                                 <div className={`${popular.classes}`}>

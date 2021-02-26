@@ -9,7 +9,9 @@ const HeaderComp = () => {
             </div>
             <div className="flex-1 flex text-center space-x-2 lg:space-x-1.5 cursor-pointer ">
                 <span className="flex-1 h-auto w-auto text-lg tracking-wide lg:tracking-widest font-light pt-2.5 hover:bg-gray-600 rounded-lg">Featured</span>
+                <Link href="/popular">
                 <span className="flex-1 h-auto w-auto text-lg tracking-wide lg:tracking-widest font-light pt-2.5 hover:bg-gray-600 rounded-lg">Popular</span>
+                </Link>
                 <span className="flex-1 h-auto w-auto text-lg tracking-wide lg:tracking-widest font-light pt-2.5 hover:bg-gray-600 rounded-lg">Near You</span>
                 <span className="h-auto w-auto text-lg tracking-wide lg:tracking-widest font-light pt-2.5 hover:bg-gray-600 rounded-lg p-1.5">Local Favorites</span>
             </div>

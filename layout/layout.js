@@ -1,9 +1,13 @@
 import HeaderComp from "../components/header/header.component";
 import MobileHeader from '../components/header/mobileHeader.component';
+import Head from 'next/head';
 
 const Layout = (props) => {
     return(
     <div className="flex flex-col h-screen">
+    <Head>
+      <title>testing</title>
+    </Head>
       <header className="text-white">
         <HeaderComp />
       </header>

@@ -5,15 +5,17 @@ const HeaderComp = () => {
     return(
         <nav className="hidden md:flex bg-gray-900 h-14 w-screen">
             <div className="lg:flex-1 cursor-pointer">
-                <Link href="/"><h6 className="pl-16 lg:pl-32 pt-2.5 text-xl tracking-widest italic font-light pr-16 lg:pr-0">Mad Foodie</h6></Link>
+                <Link href="/"><h6 className="pl-16 lg:pl-32 pt-2.5 text-xl tracking-widest font-light pr-16 lg:pr-0 hover:underline">Mad Foodie</h6></Link>
             </div>
             <div className="flex-1 flex text-center space-x-2 lg:space-x-1.5 cursor-pointer ">
-                <span className="flex-1 h-auto w-auto text-lg tracking-wide lg:tracking-widest font-light pt-2.5 hover:bg-gray-600 rounded-lg">Featured</span>
-                <Link href="/popular">
-                <span className="flex-1 h-auto w-auto text-lg tracking-wide lg:tracking-widest font-light pt-2.5 hover:bg-gray-600 rounded-lg">Popular</span>
+                <Link href="/featured">
+                    <span className="flex-1 h-auto w-auto text-lg tracking-wide lg:tracking-widest font-light pt-2.5 hover:underline rounded-lg">Featured</span>
                 </Link>
-                <span className="flex-1 h-auto w-auto text-lg tracking-wide lg:tracking-widest font-light pt-2.5 hover:bg-gray-600 rounded-lg">Near You</span>
-                <span className="h-auto w-auto text-lg tracking-wide lg:tracking-widest font-light pt-2.5 hover:bg-gray-600 rounded-lg p-1.5">Local Favorites</span>
+                <Link href="/popular">
+                <span className="flex-1 h-auto w-auto text-lg tracking-wide lg:tracking-widest font-light pt-2.5 hover:underline  rounded-lg">Popular</span>
+                </Link>
+                <span className="flex-1 h-auto w-auto text-lg tracking-wide lg:tracking-widest font-light pt-2.5 hover:underline  rounded-lg">Near You</span>
+                <span className="h-auto w-auto text-lg tracking-wide lg:tracking-widest font-light pt-2.5 hover:underline  rounded-lg p-1.5">Local Favorites</span>
             </div>
             <div className="flex-1 lg:pl-4 flex">
                 <div className="flex-1 pt-2.5">

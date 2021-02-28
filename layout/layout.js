@@ -11,7 +11,7 @@ const Layout = (props) => {
       <header className="text-white">
         <HeaderComp />
       </header>
-      <main className="flex-1 overflow-y-auto lg:p-5 p-2">
+      <main className="flex-1 overflow-y-auto lg:p-5 p-2"  style={{ backgroundColor:'rgb(227,233,255)' }}>
           {props.children}
       </main>
       <footer className="text-white">
